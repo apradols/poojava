@@ -3,6 +3,7 @@ package com.anna.provapoo;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Empresa {
 
     private int idEmpresa;

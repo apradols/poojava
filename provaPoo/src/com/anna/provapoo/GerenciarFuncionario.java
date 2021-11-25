@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 
 
+
 public class GerenciarFuncionario {
 
     private List<Funcionario> listaFuncionario = new ArrayList<>();
