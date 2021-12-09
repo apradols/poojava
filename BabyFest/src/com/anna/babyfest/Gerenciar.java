@@ -8,10 +8,7 @@ public class Gerenciar {
 
     public  static Funcionario exibirf;
     private final Scanner input = new Scanner(System.in);
-    private final List<Cliente> clientes = new ArrayList<>();
     private final List<Funcionario> funcionarios = new ArrayList<>();
-    private final List<Fornecedor> fornecedores = new ArrayList<>();
-    private final List<Usuario> usuarios = new ArrayList<>();
 
     public static void main(String[] args) {
         Gerenciar gerenciar = new Gerenciar();
