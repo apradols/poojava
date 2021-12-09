@@ -93,45 +93,11 @@ Funcionario funcionarioproc = new Funcionario();
         }
 
 
-
     public void excluirFuncionario(){
         System.out.println("Digite o ID do funcionário:");
         funcionario.setId(Integer.parseInt(input.nextLine()));
 
         funcionarios.remove(funcionario);
     }
-    public void exibirlista() {
-        for (Funcionario funcionario : exibirf.getExibirf()) {
-            System.out.println("Id: " + funcionarios.get(funcionario.getId()));
-         //   System.out.println("Nome: " + funcionarios.get(funcionario.getNome()));
-          //  System.out.println("Setor: " + funcionarios.get(funcionario.getSetor()));
-           // System.out.println("Salario: " + funcionario.getSalario());
-        }
-    }
-    private void cadastrarUsuario() {
-    }
-
-    private void alterarUsuario() {
-    }
-
-    private void excluirUsuario() {
-    }
-
-    private void cadastrarCliente() {
-    }
-
-    private void alterarCliente() {
-    }
-
-    private void excluirCliente() {
-    }
-
-    private void cadastrarFornecedor() {
-    }
-
-    private void alterarFornecedor() {
-    }
-
-    private void excluirFornecedor() {
-    }
+  }
 }
