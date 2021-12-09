@@ -7,11 +7,11 @@ public class ComputadorTeste {
 
         computadorImb = new Computador();
 
-        computadorImb.marca = "IBM";
-        computadorImb.cor = "Preto";
-        computadorImb.modelo = "IBM";
-        computadorImb.numeroSerie = 243490;
-        computadorImb.preco = 2734.60;
+        computadorImb.setMarca("IBM");
+        computadorImb.setCor("Preto");
+        computadorImb.setModelo("IBM");
+        computadorImb.setNumeroSerie(243490);
+        computadorImb.setPreco(2734.60);
         computadorImb.imprimir();
 
         computadorImb.calcularValor();
@@ -19,11 +19,11 @@ public class ComputadorTeste {
 
         computadorHp = new Computador();
 
-        computadorHp.marca = "Hp";
-        computadorHp.cor = "Preto";
-        computadorHp.modelo = "Hp";
-        computadorHp.numeroSerie = 57864;
-        computadorHp.preco = 1500.50;
+        computadorHp.setMarca("Hp");
+        computadorHp.setCor("Preto");
+        computadorHp.setModelo("Hp");
+        computadorHp.setNumeroSerie(57864);
+        computadorHp.setPreco(1500.50);
         computadorHp.imprimir();
 
         computadorHp.calcularValor();
