@@ -41,11 +41,12 @@ public class Gerenciar {
                     System.out.println("Opção Inválida," +
                             "Escolha outra opção! ");
             }
-        } while (op != 14);
+        } while (op != 4);
     }
 
 
     Funcionario funcionario = new Funcionario();
+
     public Funcionario getFuncionario() {
         return funcionario;
     }
@@ -53,9 +54,8 @@ public class Gerenciar {
     public void setFuncionario(Funcionario funcionario) {
         this.funcionario = funcionario;
     }
-// métodos
 
-    public void cadastrarFuncionario(){
+    public void cadastrarFuncionario() {
         System.out.println("Digite o ID do funcionário:");
         funcionario.setId(Integer.parseInt(input.nextLine()));
         System.out.println("Digite o nome do funcionário:");
@@ -67,18 +67,17 @@ public class Gerenciar {
         funcionarios.add(funcionario);
     }
 
-    public void alterarFuncionario(){
-Funcionario funcionarioproc = new Funcionario();
+    public void alterarFuncionario() {
+        Funcionario funcionarioproc = new Funcionario();
         for (int i = 1; i < funcionarios.size(); i++) {
             System.out.println("LISTA DE funcionarios  \n" + funcionarios);
         }
 
-        if(funcionarios.contains(funcionarioproc)){
+        if(funcionarios.contains(funcionarioproc)) {
            funcionarioproc.equals(funcionario);
            excluirFuncionario();
-
-
         }
+
         System.out.println("Alterando dados");
         System.out.println("Digite o ID do funcionário:");
         funcionario.setId(Integer.parseInt(input.nextLine()));
@@ -90,14 +89,11 @@ Funcionario funcionarioproc = new Funcionario();
         funcionario.setSalario(Double.parseDouble(input.nextLine()));
         funcionarios.add(funcionario);
 
-        }
-
+      }
 
     public void excluirFuncionario(){
         System.out.println("Digite o ID do funcionário:");
         funcionario.setId(Integer.parseInt(input.nextLine()));
-
         funcionarios.remove(funcionario);
-    }
   }
 }
