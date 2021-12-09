@@ -23,20 +23,7 @@ public class Gerenciar {
             System.out.println("1 - Cadastrar funcionário");
             System.out.println("2 - Alterar funcionário");
             System.out.println("3 - Excluir funcionário");
-            System.out.println("-----Usuário-----");
-            System.out.println("4 - Cadastrar usuário");
-            System.out.println("5 - Alterar usuário");
-            System.out.println("6 - Excluir usuário");
-            System.out.println("-----Cliente-----");
-            System.out.println("7 - Cadastrar cliente");
-            System.out.println("8 - Alterar cliente");
-            System.out.println("9 - Excluir cliente");
-            System.out.println("-----Fornecedor-----");
-            System.out.println("10 - Cadastrar fornecedor");
-            System.out.println("11 - Alterar fornecedor");
-            System.out.println("12 - Excluir fornecedor");
-            System.out.println("13 - Exibir funcionário");
-            System.out.println("14 - Sair");
+            System.out.println("4 - Sair");
             System.out.println("Escolha uma das opções: ");
             op = Integer.parseInt(input.nextLine());
             switch (op) {
@@ -50,36 +37,6 @@ public class Gerenciar {
                     gerenciar.excluirFuncionario();
                     break;
                 case 4:
-                    gerenciar.cadastrarUsuario();
-                    break;
-                case 5:
-                    gerenciar.alterarUsuario();
-                    break;
-                case 6:
-                    gerenciar.excluirUsuario();
-                    break;
-                case 7:
-                    gerenciar.cadastrarCliente();
-                    break;
-                case 8:
-                    gerenciar.alterarCliente();
-                    break;
-                case 9:
-                    gerenciar.excluirCliente();
-                    break;
-                case 10:
-                    gerenciar.cadastrarFornecedor();
-                    break;
-                case 11:
-                    gerenciar.alterarFornecedor();
-                    break;
-                case 12:
-                    gerenciar.excluirFornecedor();
-                    break;
-                case 13:
-                    gerenciar.exibirlista();
-                    break;
-                case 14:
                     System.out.println("Saindo do Sistema...");
                     break;
 
