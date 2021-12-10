@@ -22,18 +22,12 @@ public class Gerenciar {
             System.out.println("Escolha uma das opções: ");
             option = input.nextInt();
 
-            switch(option) {
-                case 1: cadastrarFuncionario();
-                    break;
-                case 2: alterarFuncionario();
-                    break;
-                case 3: excluirFuncionario();
-                    break;
-                case 4: sair();
-                    break;
-                default:
-                    System.err.println("\nOpção inválida!\n");
-                    break;
+            switch (option) {
+                case 1 -> cadastrarFuncionario();
+                case 2 -> alterarFuncionario();
+                case 3 -> excluirFuncionario();
+                case 4 -> sair();
+                default -> System.err.println("\nOpção inválida!\n");
             }
         } while(option != 4);
     }
