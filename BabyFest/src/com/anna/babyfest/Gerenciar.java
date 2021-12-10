@@ -106,6 +106,7 @@ public class Gerenciar {
                 for (Funcionario f : funcionarios) {
                     if (idFunc == f.getId()) {
                         preencherDados(f);
+                        System.out.println("\nFuncionário alterado com sucesso!\n");
                         break;
                     }
                 }
@@ -124,6 +125,7 @@ public class Gerenciar {
                 for (Funcionario f : funcionarios) {
                     if (idFunc == f.getId()) {
                         funcionarios.remove(f);
+                        System.out.println("\nFuncionário excluído com sucesso!\n");
                         break;
                     }
                 }
