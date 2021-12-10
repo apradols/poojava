@@ -31,7 +31,7 @@ public class Gerenciar {
                 case 5 -> sair();
                 default -> System.err.println("\nOpção inválida!\n");
             }
-        } while(option != 4);
+        } while(option != 5);
     }
 
     public static void preencherDados(Funcionario f) {
