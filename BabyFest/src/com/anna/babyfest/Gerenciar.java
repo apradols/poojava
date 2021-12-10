@@ -18,7 +18,8 @@ public class Gerenciar {
             System.out.println("1 - Cadastrar funcionário");
             System.out.println("2 - Alterar funcionário");
             System.out.println("3 - Excluir funcionário");
-            System.out.println("4 - Sair");
+            System.out.println("4 - Exibir os funcionários");
+            System.out.println("5 - Sair");
             System.out.println("Escolha uma das opções: ");
             option = input.nextInt();
 
@@ -26,7 +27,8 @@ public class Gerenciar {
                 case 1 -> cadastrarFuncionario();
                 case 2 -> alterarFuncionario();
                 case 3 -> excluirFuncionario();
-                case 4 -> sair();
+                case 4 -> listaFuncionarios();
+                case 5 -> sair();
                 default -> System.err.println("\nOpção inválida!\n");
             }
         } while(option != 4);
